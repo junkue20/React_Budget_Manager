@@ -2,8 +2,11 @@
   list-style-type: none;
   border: none;
   padding: 0;
+  margin: 1rem 0;
+
 }
 .btn {
+  z-index: 10;
   text-decoration: none;
   color: var(--mainWhite);
   background-color: var(--primaryColor);

@@ -2,7 +2,7 @@ import './App.css';
 import React, { useState } from 'react';
 import ExpenseForm from './components/ExpenseForm'; // ExpenseForm을 해당 경로에서 가져옴!
 import ExpenseList from './components/ExpenseList';
-import Alert from './components/Alert.css';
+import Alert from './components/Alert';
 
 //// ------------- State ------------- ////
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
   const [alert, setAlert] = useState({ show: false, type: '', text: '' });
   const [edit, setEdit] = useState(false);
   const [id, setId] = useState('');
-  const clearItmms = () => {
+  const clearItems = () => {
     setExpenses([]);
   }
 
@@ -117,7 +117,7 @@ const App = () => {
           expenses={expenses} 
           handleDelete={handleDelete} 
           handleEdit={handleEdit} 
-          clearItmms={clearItmms} 
+          clearItems={clearItems} 
         />
       </div>
 
