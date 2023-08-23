@@ -1,26 +1,8 @@
-:root {
-  --primaryColor: #90A959;
-  --secondColor: #E9B872;
-  --mainWhite: #fff;
-  --mainBlack: #222;
-  --mainRed: #c45151;
-  --mainGreen: #4caf50;
+.list {
+  list-style-type: none;
+  border: none;
+  padding: 0;
 }
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: var(--secondColor);
-  color: var(--mainBlack);
-}
-
-h1 {
-  margin: 1rem 0;
-}
-
 .btn {
   text-decoration: none;
   color: var(--mainWhite);
